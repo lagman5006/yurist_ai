@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html lang="uz">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Yurist AI — Privacy Policy</title>
+  <title>Yurist AI Privacy</title>
   <style>
-    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
       --green-dark: #0F6E56;
       --green-light: #E1F5EE;
@@ -17,7 +16,17 @@
       --text-tertiary: #888780;
       --border: rgba(0,0,0,0.1);
     }
-
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --green-dark: #5DCAA5;
+        --green-light: #04342c;
+        --bg: #1c1c1a;
+        --bg-secondary: #252522;
+        --text-primary: #f0ede8;
+        --text-secondary: #b4b2a9;
+        --border: rgba(255,255,255,0.12);
+      }
+    }
     body {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
       background: var(--bg);
@@ -26,35 +35,26 @@
       line-height: 1.7;
       max-width: 760px;
       margin: 0 auto;
-      padding: 0 24px 80px;
+      padding: 0 16px 80px;
     }
-
     .hero {
-      background: var(--green-dark);
+      background: #0F6E56;
       color: #fff;
-      margin: 0 -24px 40px;
-      padding: 48px 24px 36px;
+      margin: 0 -16px 32px;
+      padding: 44px 24px 32px;
       text-align: center;
     }
-    .hero h1 { font-size: 28px; font-weight: 600; margin-bottom: 8px; color: #fff; }
-    .hero p { font-size: 15px; color: rgba(255,255,255,0.75); }
-
-    h2 {
-      font-size: 21px;
-      font-weight: 600;
-      margin: 40px 0 14px;
-      color: var(--green-dark);
-    }
-    h3 {
-      font-size: 17px;
-      font-weight: 600;
-      margin: 22px 0 10px;
-    }
+    .hero h1 { font-size: 28px; font-weight: 600; margin-bottom: 6px; color: #fff; }
+    .hero p { font-size: 15px; color: rgba(255,255,255,0.8); }
+    nav { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-top: 14px; font-size: 14px; }
+    nav a { color: #fff; opacity: .9; }
+    h2 { font-size: 21px; font-weight: 600; margin: 36px 0 12px; color: var(--green-dark); }
+    h3 { font-size: 17px; font-weight: 600; margin: 20px 0 8px; }
     p { margin-bottom: 12px; color: var(--text-secondary); }
-    ul { margin: 0 0 16px 20px; color: var(--text-secondary); }
+    ul, ol { margin: 0 0 16px 22px; color: var(--text-secondary); }
     li { margin-bottom: 8px; }
     strong { color: var(--text-primary); }
-
+    a { color: var(--green-dark); }
     .callout {
       background: var(--bg-secondary);
       border-left: 3px solid var(--green-dark);
@@ -63,126 +63,91 @@
       margin: 18px 0;
       font-size: 14px;
     }
-
-    .updated {
-      font-size: 13px;
-      color: var(--text-tertiary);
-      margin-bottom: 24px;
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 14px 0 22px;
-      font-size: 14px;
-    }
-    th, td {
-      border: 1px solid var(--border);
-      padding: 10px 12px;
-      text-align: left;
-      vertical-align: top;
-    }
-    th {
-      background: var(--bg-secondary);
-      font-weight: 600;
-    }
-
-    footer {
-      margin-top: 50px;
-      padding-top: 24px;
-      border-top: 0.5px solid var(--border);
-      font-size: 13px;
-      color: var(--text-tertiary);
-      text-align: center;
-    }
-    footer a { color: var(--green-dark); text-decoration: none; }
+    .callout p:last-child { margin-bottom: 0; }
+    .updated { font-size: 13px; color: var(--text-tertiary); margin-bottom: 20px; }
+    .table-wrap { overflow-x: auto; }
+    table { width: 100%; border-collapse: collapse; margin: 14px 0 22px; font-size: 14px; }
+    th, td { border: 1px solid var(--border); padding: 10px 12px; text-align: left; vertical-align: top; color: var(--text-secondary); }
+    th { background: var(--bg-secondary); font-weight: 600; color: var(--text-primary); }
+    details { border: 1px solid var(--border); border-radius: 10px; padding: 12px 16px; margin-bottom: 10px; }
+    summary { cursor: pointer; font-weight: 600; }
+    details p { margin: 10px 0 0; }
+    footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--border); font-size: 13px; color: var(--text-tertiary); text-align: center; }
   </style>
 </head>
 <body>
 
 <div class="hero">
   <h1>Privacy Policy</h1>
-  <p>Yurist AI — AI-powered legal assistant for Uzbekistan</p>
+  <p>Yurist AI — AI legal information assistant for Uzbekistan</p>
+  <nav><a href="index.html">Support</a><a href="privacy.html">Privacy Policy</a><a href="delete-account.html">Delete account</a></nav>
 </div>
 
-<p class="updated">Last updated: June 17, 2026</p>
+<p class="updated">Last updated: October 14, 2026</p>
 
-<p>This Privacy Policy explains how Yurist AI ("the App," "we," "us") handles information when you use our mobile application. We are committed to protecting your privacy and being transparent about our current data practices.</p>
+<p>This Privacy Policy explains how Yurist AI ("the App", "we", "us") collects, uses and shares information when you use our mobile application.</p>
 
 <div class="callout">
-  <strong>Current status:</strong> Yurist AI is currently a static demo application. The app does not yet have a live backend server, does not create or store user accounts, and does not transmit your questions to any third-party AI service. This policy reflects our current practices and will be updated before any new functionality (such as account creation or live AI processing) is released.
+  <p><strong>Disclaimer:</strong> Yurist AI provides general legal information generated by artificial intelligence. It is <strong>not legal advice</strong>, answers may contain mistakes, and it does not replace a qualified lawyer.</p>
+  <p>Yurist AI is an independent project. It is <strong>not affiliated with, endorsed by, or acting on behalf of any government agency</strong> of the Republic of Uzbekistan. For official legal texts, see <a href="https://lex.uz">lex.uz</a>.</p>
 </div>
 
-<h2>1. Information We Collect</h2>
-<p>In its current version, Yurist AI does <strong>not</strong> collect, store, or transmit any personal data. Specifically:</p>
+<h2>1. Information we collect</h2>
 <ul>
-  <li>No account registration is required or available</li>
-  <li>No personal identifiers (name, email, phone number) are collected</li>
-  <li>No questions or messages you type are sent to any server or third-party service</li>
-  <li>No location data is collected</li>
-  <li>No advertising identifiers are collected</li>
+  <li><strong>Account data:</strong> your name, email address and password when you register. Passwords are stored only in hashed form. A phone number is optional and is stored only if you add it to your profile.</li>
+  <li><strong>Chat content:</strong> the questions you type and the answers generated for you, saved as your conversation history.</li>
+  <li><strong>Feedback and reports:</strong> ratings and reports you submit about AI answers, including any optional comment.</li>
 </ul>
+<p>We do <strong>not</strong> collect location, contacts, photos, files, microphone data, advertising identifiers or payment information. The app contains no ads and no third-party analytics or tracking SDKs.</p>
 
-<h2>2. Future Functionality</h2>
-<p>As Yurist AI develops, future versions may introduce the following features. Before any of these are activated, this Privacy Policy will be updated and users will be asked for explicit consent where required:</p>
-
-<h3>2.1 AI Processing</h3>
-<p>When live AI functionality is introduced, user questions may be sent to a third-party AI service provider for the purpose of generating legal information responses. Before this feature is enabled, we will:</p>
+<h2>2. How we use information</h2>
 <ul>
-  <li>Clearly disclose which third-party AI provider is used</li>
-  <li>Explain exactly what data is sent (e.g., the text of your question)</li>
-  <li>Request your explicit permission before transmitting any data</li>
-  <li>Update this policy to name the provider and describe their data protection practices</li>
+  <li>To create and secure your account and let you sign in</li>
+  <li>To generate answers to your legal questions and show your conversation history</li>
+  <li>To review reported answers and improve answer quality</li>
+  <li>To respond to your support requests</li>
 </ul>
+<p>We do not sell personal data and do not use it for advertising.</p>
 
-<h3>2.2 Account Creation</h3>
-<p>If account creation is introduced in a future version, users will be able to permanently delete their account and all associated data directly within the app, without needing to contact customer support.</p>
-
-<h2>3. Data Storage</h2>
-<p>Any data collected by future versions of the app will be stored on servers located in Uzbekistan and protected using encryption in transit and at rest. We do not sell personal data to any third party.</p>
-
-<h2>4. Third-Party Services</h2>
+<h2>3. AI processing and third-party sharing</h2>
+<p>To generate an answer, the text of your question is sent from our servers to a third-party AI service provider. The app asks for your explicit consent before your first message is sent.</p>
+<div class="table-wrap">
 <table>
-  <tr>
-    <th>Service</th>
-    <th>Purpose</th>
-    <th>Data Shared</th>
-  </tr>
-  <tr>
-    <td>None currently</td>
-    <td>—</td>
-    <td>No third-party services currently receive user data</td>
-  </tr>
+  <tr><th>Recipient</th><th>Purpose</th><th>Data shared</th></tr>
+  <tr><td>OpenAI (AI service provider)</td><td>Generating answers to your questions</td><td>The text of your chat messages only. Your name, email, phone number and password are not shared.</td></tr>
 </table>
-<p>This table will be updated to list any third-party AI providers, analytics tools, or other services before they are integrated into the app.</p>
+</div>
+<p>We do not share your data with anyone else, except where required by law. Please do not include sensitive personal information (passport details, phone numbers, health information, etc.) in your questions.</p>
 
-<h2>5. Children's Privacy</h2>
+<h2>4. Security</h2>
+<p>All communication between the app and our servers is encrypted in transit using HTTPS/TLS. Passwords are stored in hashed form and access to our servers is restricted.</p>
+
+<h2>5. Retention and deletion</h2>
+<p>We keep your account data and conversations until you delete them or your account. You can:</p>
+<ul>
+  <li>Delete an individual conversation in the app (side menu → conversation → delete)</li>
+  <li>Permanently delete your account and all associated data in the app: <strong>Settings → Account → Delete account</strong></li>
+  <li>Request deletion without the app, as described on our <a href="delete-account.html">account deletion page</a></li>
+</ul>
+<p>When you delete your account, your profile, conversations, ratings and reports are permanently removed from our servers.</p>
+
+<h2>6. Children</h2>
 <p>Yurist AI is not directed at children under 13, and we do not knowingly collect personal data from children.</p>
 
-<h2>6. Your Rights</h2>
-<p>Since the app currently collects no personal data, there is no data to access, correct, or delete. Once account functionality is introduced, users will be able to:</p>
-<ul>
-  <li>Access the personal data associated with their account</li>
-  <li>Request correction of inaccurate data</li>
-  <li>Permanently delete their account and associated data directly within the app</li>
-</ul>
+<h2>7. Your rights</h2>
+<p>You can view and update your profile in the app and delete your account at any time. For any other request about your data, contact us using the details below.</p>
 
-<h2>7. Changes to This Policy</h2>
-<p>We will update this Privacy Policy whenever new features that affect data collection are introduced, and we will update the "Last updated" date above accordingly. Material changes will be communicated within the app.</p>
+<h2>8. Changes to this policy</h2>
+<p>We will update this policy when our data practices change and update the "Last updated" date above. Material changes will be announced in the app.</p>
 
-<h2>8. Contact Us</h2>
-<p>If you have questions about this Privacy Policy, please contact us:</p>
+<h2>9. Contact</h2>
 <ul>
-  <li>Email: <strong>support@yurist.ai</strong></li>
-  <li>Telegram: <strong>@yuristai_support</strong></li>
+  <li>Email: <a href="mailto:admin@yuristai.uz">admin@yuristai.uz</a></li>
+  <li>Telegram: <a href="https://t.me/yuristai">@yuristai</a></li>
 </ul>
 
 <footer>
-  <p>© 2026 Yurist AI — AI-powered legal assistance for Uzbekistan</p>
-  <p style="margin-top: 6px;">
-    <a href="https://lagman5006.github.io/yurist_ai/">Support Center</a> &nbsp;·&nbsp;
-    <a href="mailto:support@yurist.ai">support@yurist.ai</a>
-  </p>
+  © 2026 Yurist AI · <a href="mailto:admin@yuristai.uz">admin@yuristai.uz</a> · <a href="privacy.html">Privacy Policy</a> · <a href="delete-account.html">Delete account</a>
 </footer>
 
 </body>
